@@ -1,5 +1,5 @@
-apiVersion: platform.confluent.io/v1beta1
-kind: KafkaTopic
+apiVersion: cfk.homelab.dev/v1alpha1
+kind: KafkaTopicRequest
 metadata:
   name: topic-a
 spec:
