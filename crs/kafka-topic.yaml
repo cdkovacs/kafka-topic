@@ -3,9 +3,9 @@ kind: KafkaTopicRequest
 metadata:
   name: default
 spec:
+  partitionCount: 12
   topics:
     - name: topic-a
-      partitionCount: 12
       replicas: 1
       kafkaCluster: kafka
       configs:
