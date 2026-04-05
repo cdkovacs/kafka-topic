@@ -1,11 +1,11 @@
 apiVersion: cfk.homelab.dev/v1alpha1
-kind: KafkaTopicRequest
+kind: KafkaTopicRegistry
 metadata:
   name: default
 spec:
-  partitionCount: 12
   topics:
     - name: topic-a
+      partitionCount: 12
       replicas: 1
       kafkaCluster: kafka
       configs:
