@@ -3,10 +3,10 @@ kind: KafkaTopicRegistry
 metadata:
   name: default
 spec:
-  topics: # []
-    - name: topic-a
-      partitionCount: 12
-      replicas: 1
-      kafkaCluster: kafka
-      configs:
-        cleanup.policy: "compact"
+  topics: []
+#    - name: topic-a
+#      partitionCount: 12
+#      replicas: 1
+#      kafkaCluster: kafka
+#      configs:
+#        cleanup.policy: "compact"
