@@ -1,5 +1,5 @@
 apiVersion: cfk.homelab.dev/v1alpha1
-kind: KafkaTopicRegistry
+kind: KafkaTopicRequest
 metadata:
   name: default
 spec:
