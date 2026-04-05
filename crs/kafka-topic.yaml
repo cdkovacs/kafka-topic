@@ -1,13 +1,12 @@
-apiVersion: v1
-kind: ConfigMap
+apiVersion: cfk.homelab.dev/v1alpha1
+kind: KafkaTopicRegistry
 metadata:
-  name: kafka-topic-registry
-  namespace: confluent
-data:
-  topics: |
+  name: default
+spec:
+  topics:
     - name: topic-a
       partitionCount: 12
       replicas: 1
+      kafkaCluster: kafka
       configs:
         cleanup.policy: "compact"
-      kafkaCluster: kafka
