@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: kafka-topic-registry
-  namespace: kluctl-system
+  namespace: confluent
 data:
   topics: |
     - name: topic-a
